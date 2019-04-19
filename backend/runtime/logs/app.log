@@ -1,0 +1,1209 @@
+2019-04-19 09:56:26 [127.0.0.1][-][80l1kum03o7op0orps53hhnpv0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::用户名 in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\base\Component->__get('\xE7\x94\xA8\xE6\x88\xB7\xE5\x90\x8D')
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), '\xE7\x94\xA8\xE6\x88\xB7\xE5\x90\x8D')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), '\xE7\x94\xA8\xE6\x88\xB7\xE5\x90\x8D', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), '\xE7\x94\xA8\xE6\x88\xB7\xE5\x90\x8D', Array)
+#4 E:\PHPTutorial\WWW\basic\backend\views\site\login.php(20): yii\widgets\ActiveField->textInput(Array)
+#5 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#6 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(84): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2019-04-19 09:56:26 [127.0.0.1][-][80l1kum03o7op0orps53hhnpv0][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '992067775c9d076c6b5f1d598d0931104a4eac71dd9a59dc7b494e2a8a80d084a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"8Z4zk7ZRmTH8AfeuTn5dOcRe33aNyQ7m\";}'
+    'advanced-backend' => '80l1kum03o7op0orps53hhnpv0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-backend=992067775c9d076c6b5f1d598d0931104a4eac71dd9a59dc7b494e2a8a80d084a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%228Z4zk7ZRmTH8AfeuTn5dOcRe33aNyQ7m%22%3B%7D; advanced-backend=80l1kum03o7op0orps53hhnpv0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '56488'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555667786.3006
+    'REQUEST_TIME' => 1555667786
+]
+2019-04-19 10:04:44 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Unexpected yii\bootstrap\NavBar::end() call. A matching begin() is not found. in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Widget.php:120
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\layouts\main.php(51): yii\base\Widget::end()
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:04:44 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php?r=site%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57206'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555668284.6889
+    'REQUEST_TIME' => 1555668284
+]
+2019-04-19 10:10:17 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\View::name in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\site\index.php(6): yii\base\Component->__set('name', '\xE6\x9D\xAD\xE5\xB7\x9E\xE5\xB0\xA4\xE5\xAE\xA0\xE5\xB1\x8B...')
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:10:17 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php?r=site%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58035'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555668617.4123
+    'REQUEST_TIME' => 1555668617
+]
+2019-04-19 10:10:55 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\View::name in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\site\index.php(6): yii\base\Component->__set('name', '\xE5\x90\x8E\xE5\x8F\xB0\xE7\xB3\xBB\xE7\xBB\x9F')
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:10:55 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php?r=site%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58035'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555668655.439
+    'REQUEST_TIME' => 1555668655
+]
+2019-04-19 10:11:03 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\View::name in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\site\index.php(6): yii\base\Component->__set('name', '\xE5\x90\x8E\xE5\x8F\xB0\xE7\xB3\xBB\xE7\xBB\x9F')
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:11:03 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php?r=site%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58035'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555668663.6543
+    'REQUEST_TIME' => 1555668663
+]
+2019-04-19 10:11:21 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\View::namen in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\site\index.php(6): yii\base\Component->__set('namen', '\xE5\x90\x8E\xE5\x8F\xB0\xE7\xB3\xBB\xE7\xBB\x9F')
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:11:20 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php?r=site%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58035'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555668680.9581
+    'REQUEST_TIME' => 1555668680
+]
+2019-04-19 10:15:54 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][Error] Error: Class 'Html' not found in E:\PHPTutorial\WWW\basic\backend\views\site\index.php:9
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#5 [internal function]: backend\controllers\SiteController->actionIndex()
+#6 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-04-19 10:15:54 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58624'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555668954.5009
+    'REQUEST_TIME' => 1555668954
+]
+2019-04-19 10:18:19 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in E:\PHPTutorial\WWW\basic\backend\views\site\index.php:24
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\site\index.php(24): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'E:\\PHPTutorial\\...', 24, Array)
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:18:19 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58915'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555669099.0781
+    'REQUEST_TIME' => 1555669099
+]
+2019-04-19 10:18:37 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in E:\PHPTutorial\WWW\basic\backend\views\site\index.php:24
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\backend\views\site\index.php(24): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'E:\\PHPTutorial\\...', 24, Array)
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require('E:\\PHPTutorial\\...')
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#5 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2019-04-19 10:18:37 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58915'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555669117.6721
+    'REQUEST_TIME' => 1555669117
+]
+2019-04-19 10:19:25 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][Error] Error: Class 'Url' not found in E:\PHPTutorial\WWW\basic\backend\views\site\index.php:15
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('E:\\PHPTutorial\\...', Array)
+#2 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('E:\\PHPTutorial\\...', Array, Object(backend\controllers\SiteController))
+#3 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#4 E:\PHPTutorial\WWW\basic\backend\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#5 [internal function]: backend\controllers\SiteController->actionIndex()
+#6 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#9 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2019-04-19 10:19:25 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58915'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555669165.5561
+    'REQUEST_TIME' => 1555669165
+]
+2019-04-19 10:22:05 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/index". in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#1 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 E:\PHPTutorial\WWW\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\PHPTutorial\WWW\basic\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-04-19 10:22:05 [127.0.0.1][4][ejakik3sq0am42p79nnjle15e4][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ejakik3sq0am42p79nnjle15e4'
+    '_identity-backend' => '47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"N-iKntoSI8B7tJnVydHCyq0lha833d2i\",2592000]\";}'
+    '_csrf-backend' => 'b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-UAD8L9I'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-UAD8L9I'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\git\\Git\\cmd;E:\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-UAD8L9I'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-UAD8L9I'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=ejakik3sq0am42p79nnjle15e4; _identity-backend=47c0ee0ae514c88627236ad96f5bcc37485a383ffad9aa3066b3818d16feb994a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22N-iKntoSI8B7tJnVydHCyq0lha833d2i%22%2C2592000%5D%22%3B%7D; _csrf-backend=b9c93034faf99e044fbe143700863a9054114980e33cae3a1b90ca2257f00809a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22WdahQO6wAnUG7IrHeR99W5aPVNlWmU5a%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://basic.com/index.php'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'basic.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58915'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'PATH_TRANSLATED' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:\\PHPTutorial\\WWW\\basic\\backend\\web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1555669325.5153
+    'REQUEST_TIME' => 1555669325
+]
